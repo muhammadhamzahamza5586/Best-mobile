@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A friendly, no-fuss guide to choosing a laptop for school, college, and university."
+    />
+    <meta name="theme-color" content="#f6f7f4" />
+    <title>Study Kit — Find your student laptop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="Study Kit home">
+        <span class="brand-mark" aria-hidden="true">s</span>
+        study<span>kit</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Open menu</span>
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#picks">The picks</a>
+        <a href="#how-to-choose">How to choose</a>
+        <a href="#student-checklist">Student checklist</a>
+      </nav>
+      <a class="nav-cta" href="#picks">Find your laptop <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero page-width">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A smarter start to your semester</div>
+          <h1>The right laptop.<br />More <span>room to learn.</span></h1>
+          <p class="hero-description">
+            Big assignments, little budgets, all-day classes. Find a laptop that fits the way you study.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#picks">Explore student picks <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="#how-to-choose">A 2-minute buying guide</a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <span>J</span><span>M</span><span>A</span>
+            </div>
+            <p><strong>Made for real student life</strong><br />No spec-sheet overload, promise.</p>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Illustration of a laptop ready for class">
+          <div class="art-sparkle sparkle-one">✳</div>
+          <div class="art-sparkle sparkle-two">✦</div>
+          <div class="hero-sticker"><span>LESS SCROLLING</span><strong>more studying</strong></div>
+          <div class="hero-laptop">
+            <div class="hero-screen">
+              <div class="screen-toolbar"><span></span><span></span><span></span></div>
+              <div class="screen-note">
+                <span class="screen-label">TODAY'S PLAN</span>
+                <strong>One thing<br />at a time.</strong>
+                <div class="screen-progress"><i></i></div>
+                <small>3 of 5 tasks done</small>
+              </div>
+              <div class="screen-sun"></div>
+            </div>
+            <div class="hero-base"></div>
+          </div>
+          <div class="art-caption"><span class="caption-line"></span> YOUR NEXT SEMESTER, SORTED</div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="What matters in a student laptop">
+        <div class="trust-inner page-width">
+          <span class="trust-intro">THE SHORTLIST, BUILT AROUND YOU</span>
+          <span class="trust-item"><span class="trust-icon">↗</span> All-day battery</span>
+          <span class="trust-item"><span class="trust-icon">◎</span> Easy to carry</span>
+          <span class="trust-item"><span class="trust-icon">＄</span> Worth your budget</span>
+          <span class="trust-item"><span class="trust-icon">⌁</span> Ready for class</span>
+        </div>
+      </section>
+
+      <section class="picks-section page-width" id="picks">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> The shortlist</div>
+            <h2>Good picks. <span>Good reasons.</span></h2>
+          </div>
+          <p>Start with what matters to you. Every pick is a solid study companion.</p>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-tabs" role="group" aria-label="Filter laptops">
+            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All picks <span>03</span></button>
+            <button class="filter-chip" type="button" data-filter="value" aria-pressed="false">Best value</button>
+            <button class="filter-chip" type="button" data-filter="battery" aria-pressed="false">Best battery</button>
+            <button class="filter-chip" type="button" data-filter="creative" aria-pressed="false">For creative work</button>
+          </div>
+          <label class="sort-control">
+            <span>Sort by</span>
+            <select id="sort-select" aria-label="Sort laptops">
+              <option value="recommended">Recommended</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+          <article class="product-card featured-card" data-tags="battery creative" data-price="999" data-order="1">
+            <div class="product-art product-art-air">
+              <span class="product-badge">THE ALL-ROUNDER</span>
+              <button class="save-button" type="button" aria-label="Save MacBook Air 13-inch" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4.75h11a1 1 0 0 1 1 1v14l-6.5-3.9-6.5 3.9v-14a1 1 0 0 1 1-1Z" /></svg>
+              </button>
+              <div class="mini-laptop laptop-air">
+                <div class="mini-screen"><span class="wallpaper-shape"></span><span class="wallpaper-sun"></span></div>
+                <div class="mini-base"></div>
+              </div>
+              <span class="art-label">LIGHT AS YOUR NOTES</span>
+            </div>
+            <div class="product-content">
+              <div class="product-kicker">BEST FOR MOST STUDENTS <span>01 / 03</span></div>
+              <h3>MacBook Air 13-inch</h3>
+              <p class="product-summary">The dependable everyday pick: light in your bag, quiet in class, and ready for a long day on campus.</p>
+              <div class="spec-list">
+                <span><b>Up to 18 hrs</b> battery*</span>
+                <span><b>16 GB</b> unified memory</span>
+                <span><b>From $999</b> typical US price*</span>
+              </div>
+              <div class="product-footer">
+                <span class="verdict"><span>✦</span> Easy to recommend</span>
+                <button class="details-button" type="button" data-product="air">Why this one <span aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-tags="value" data-price="699" data-order="2">
+            <div class="product-art product-art-acer">
+              <span class="product-badge">BEST VALUE</span>
+              <button class="save-button" type="button" aria-label="Save Acer Aspire 14" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4.75h11a1 1 0 0 1 1 1v14l-6.5-3.9-6.5 3.9v-14a1 1 0 0 1 1-1Z" /></svg>
+              </button>
+              <div class="mini-laptop laptop-acer">
+                <div class="mini-screen"><span class="window-card"></span><span class="window-card second"></span></div>
+                <div class="mini-base"></div>
+              </div>
+              <span class="art-label">A LOT FOR YOUR MONEY</span>
+            </div>
+            <div class="product-content">
+              <div class="product-kicker">BEST FOR TIGHTER BUDGETS <span>02 / 03</span></div>
+              <h3>Acer Aspire 14</h3>
+              <p class="product-summary">A practical Windows laptop with the memory and storage to handle your tabs, papers, and everyday apps.</p>
+              <div class="spec-list">
+                <span><b>16 GB</b> memory</span>
+                <span><b>512 GB</b> SSD storage</span>
+                <span><b>From $699</b> typical US price*</span>
+              </div>
+              <div class="product-footer">
+                <span class="verdict"><span>✦</span> Budget-friendly</span>
+                <button class="details-button" type="button" data-product="acer">Why this one <span aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-tags="creative" data-price="899" data-order="3">
+            <div class="product-art product-art-asus">
+              <span class="product-badge">CREATIVE PICK</span>
+              <button class="save-button" type="button" aria-label="Save ASUS Zenbook 14 OLED" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4.75h11a1 1 0 0 1 1 1v14l-6.5-3.9-6.5 3.9v-14a1 1 0 0 1 1-1Z" /></svg>
+              </button>
+              <div class="mini-laptop laptop-asus">
+                <div class="mini-screen"><span class="color-orb orb-one"></span><span class="color-orb orb-two"></span><span class="color-orb orb-three"></span></div>
+                <div class="mini-base"></div>
+              </div>
+              <span class="art-label">LET YOUR IDEAS POP</span>
+            </div>
+            <div class="product-content">
+              <div class="product-kicker">BEST FOR VISUAL WORK <span>03 / 03</span></div>
+              <h3>ASUS Zenbook 14 OLED</h3>
+              <p class="product-summary">A vivid screen and roomy SSD make this a lovely fit for design projects, photo editing, and media.</p>
+              <div class="spec-list">
+                <span><b>14-inch</b> OLED display</span>
+                <span><b>16 GB</b> memory</span>
+                <span><b>From $899</b> typical US price*</span>
+              </div>
+              <div class="product-footer">
+                <span class="verdict"><span>✦</span> Made to create</span>
+                <button class="details-button" type="button" data-product="asus">Why this one <span aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No laptops match that filter just yet. Try another one.</p>
+        <p class="price-note">*Prices and battery life are approximate, vary by configuration and retailer, and may change. Check current listings before buying.</p>
+        <div class="saved-note" id="saved-note" aria-live="polite"></div>
+      </section>
+
+      <section class="guide-section" id="how-to-choose">
+        <div class="guide-inner page-width">
+          <div class="guide-intro">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Before you buy</div>
+            <h2>Skip the spec spiral.</h2>
+            <p>For most students, three things matter more than a flashy spec sheet.</p>
+            <a class="text-link" href="#student-checklist">See the quick checklist <span aria-hidden="true">↘</span></a>
+          </div>
+          <div class="guide-points">
+            <article class="guide-point">
+              <span class="guide-number">01</span>
+              <div><h3>Make it easy to carry</h3><p>A 13- or 14-inch laptop is a sweet spot for class, the library, and commuting.</p></div>
+              <span class="guide-doodle" aria-hidden="true">↗</span>
+            </article>
+            <article class="guide-point">
+              <span class="guide-number">02</span>
+              <div><h3>Give yourself breathing room</h3><p>Aim for 16 GB of memory and 512 GB of storage if your budget allows.</p></div>
+              <span class="guide-doodle" aria-hidden="true">✳</span>
+            </article>
+            <article class="guide-point">
+              <span class="guide-number">03</span>
+              <div><h3>Check your course requirements</h3><p>Some engineering, design, or media courses need specific software or a more powerful machine.</p></div>
+              <span class="guide-doodle" aria-hidden="true">⌁</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="checklist-section page-width" id="student-checklist">
+        <div class="checklist-card">
+          <div class="checklist-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Save for later</div>
+            <h2>Your campus-ready<br />checklist.</h2>
+            <p>A few small checks now can save you a headache later.</p>
+          </div>
+          <ul class="checklist">
+            <li><span>✓</span> Check your course software requirements</li>
+            <li><span>✓</span> Look for at least 16 GB memory</li>
+            <li><span>✓</span> Make sure it fits your bag and budget</li>
+            <li><span>✓</span> Compare student discounts and warranty</li>
+          </ul>
+          <div class="checklist-stamp" aria-hidden="true"><span>YOU'VE<br />GOT THIS</span><b>✳</b></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner page-width">
+        <a class="wordmark" href="#"><span class="brand-mark" aria-hidden="true">s</span>study<span>kit</span></a>
+        <p>Good gear for the next big thing.</p>
+        <span class="footer-small">Independent student-friendly guide · 2026</span>
+      </div>
+    </footer>
+
+    <dialog class="details-dialog" id="details-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close details">×</button>
+      <div class="dialog-eyebrow">THE STUDY KIT TAKE</div>
+      <h2 id="dialog-title"></h2>
+      <p class="dialog-description"></p>
+      <div class="dialog-best-for"><strong>Why it made the list</strong><ul></ul></div>
+      <p class="dialog-tip"></p>
+    </dialog>
+  </body>
+</html>
